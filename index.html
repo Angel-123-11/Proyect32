@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <audio id="audio-mar" loop>
+    <source src="mar-audio.mp3" type="audio/mpeg">
+</audio>
+<button onclick="controlarAudio()" id="btn-audio">🔊 Sonido de Mar</button>
+        <div class="Seccion-Superior">
+        <div id="header">
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                  <li><a href="">Reptiles</a>
+                    <ul>
+                        <li><a href="anaconda.html">Anaconda Verde</a></li>
+                        <li><a href="camaleon.html">Camaleón de Velo</a></li>
+                        <li><a href="iguanaverde.html">Iguana Verdes</a></li>
+                        <li><a href="cocodrilo.html">Cocodrilo de Pantano</a></li>
+                        <li><a href="cobra.html">Cobra Real</a></li>
+                        </ul>
+                        </li>
+                <li><a href="">Mamiferos</a>
+                    <ul>
+                        <li><a href="leon.html">León</a></li>
+                        <li><a href="gorila.html">Gorila de Montaña</a></li>
+                        <li><a href="jaguar.html">Jaguar</a></li>
+                        <li><a href="elefante.html">Elefante Africano</a></li>
+                        <li><a href="lobo.html">Lobo Gris</a></li>
+                        </ul>
+                        </li>
+                <li><a href="Ajolote.html">Anfibios</a>
+                </li>
+             <li><a href="">Peces</a>
+                <ul>
+                    <li><a href="https://oceana.org/marine-life/great-white-shark/">Tiburón Blanco</a></li>
+                    <li><a href="https://www.fishipedia.es/pez/amphiprion-ocellaris">Pez Payaso</a></li>
+                    <li><a href="https://www.fisheries.noaa.gov/species/giant-manta-ray">Mantarraya</a></li>
+                    <li><a href="https://elbibliote.com/resources/animales/ficha.php?id=207">Pez Luna</a></li>
+                    <li><a href="https://www.gob.mx/imipas/acciones-y-programas/atun-aleta-azul">Atún Aleta Azul</a></li>
+                </ul>
+            </li>
+            <li><a href="">Aves</a>
+                <ul>
+                    <li><a href="https://www.audubon.org/es/guia-de-aves/ave/colibri-garganta-rubi">Colibrí</a></li>
+                    <li><a href="https://www.allaboutbirds.org/guide/Peregrine_Falcon/overview">Halcón Peregrino</a></li>
+                    <li><a href="https://animals.sandiegozoo.org/animals/harpy-eagle">Águila Arpía</a></li>
+                    <li><a href="https://abcbirds.org/birds/resplendent-quetzal/">Quetzal</a></li>
+                    <li><a href="https://oceanwide-expeditions.com/es/destacados/vida-silvestre/pinguino-emperador?srsltid=AfmBOoqwDLfzewjkxXdNT0fFC_en-80mKcq5-fc4WKsjqpvnxfU9j7hc">Pingüino Emperador</a></li>
+                </ul>
+                </li>    
+        </div>
+        <p></p>
+        <div class="separador"></div>
+            <h1 class="HG">Explora La Fauna</h1>
+        
+        <div class="linea"></div>
+        </div><div id="Caja">
+    <video autoplay muted loop id="video-fondo">
+        <source src="mar.mp4" type="video/mp4">
+    </video>     
+    <div class="gallery-spread">
+        <div class="card">
+            <img src="coco.jpg" alt="Reptiles">
+            <p>Reptiles</p>
+        </div>
+
+        <div class="card">
+            <img src="Leo.jpg" alt="Mamíferos">
+            <p>Mamíferos</p>
+        </div>
+        <div class="card">
+            <img src="ave.jpg" alt="Aves">
+            <p>Aves</p>
+        </div>
+        
+        <div class="card">
+            <img src="pez.jpg" alt="Peces">
+            <p>Peces</p>
+        </div>
+        <div class="card">
+            <img src="ajolote.jpg" alt="Anfibios">
+            <p>Anfibios</p>
+        </div>
+    </div>
+</div></div>
+<script>
+    function controlarAudio() {
+        var audio = document.getElementById("audio-mar");
+        var boton = document.getElementById("btn-audio");
+
+        if (audio.paused) {
+            audio.play();
+            boton.innerHTML = "🔇 Pausar Mar";
+        } else {
+            audio.pause();
+            boton.innerHTML = "🔊 Sonido de Mar";
+        }
+    }
+</script>
+<footer>
+    <ul class="pie">
+        <li>Noh Chi Angel Gabriel</li>
+        <li>Juliana</li>
+        <li>Emanuel</li>
+        <li>Miguel</li>
+        <li>Jimena</li>
+    </ul>
+</footer>
+    </body>
+
+
+
+
+</html>
